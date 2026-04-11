@@ -1,6 +1,6 @@
 import { Phone, Mail, MapPin, Clock, Star, Wifi, Car, UtensilsCrossed, Dumbbell, Waves, Plane, ShieldCheck, Shirt, ConciergeBell, Baby, Coffee, Briefcase, Users, Maximize, BedSingle, ChevronRight, ChevronLeft, Check, Image as ImageIcon } from "lucide-react";
 import logo from "@/assets/logo.png";
-import heroImage from "@/assets/hero-hotel.jpg";
+import heroImage from "@/assets/Front_hero_image.png";
 import roomStandardImage from "@/assets/room-standard.jpg";
 import roomTwinImage from "@/assets/room-twin.jpg";
 import roomExecutiveImage from "@/assets/room-executive.jpg";
@@ -28,10 +28,10 @@ import img18 from "@/assets/image18.avif";
 import img19 from "@/assets/image19.webp";
 
 const Header = () => (
-  <header className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-sm border-b border-border h-16 md:h-20">
+  <header className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-sm border-b border-border h-12 md:h-16">
     <div className="container mx-auto h-full flex items-center justify-between">
       <div className="relative h-full flex items-center min-w-[200px] md:min-w-[300px]">
-        <img src={logo} alt="Hotel Ambience Logo" className="h-28 md:h-40 w-auto object-contain absolute left-0 top-1/2 -translate-y-1/2 drop-shadow-lg z-10" />
+        <img src={logo} alt="Hotel Ambience Logo" className="h-20 md:h-32 w-auto object-contain absolute left-0 top-1/2 -translate-y-1/2 drop-shadow-lg z-10" />
       </div>
       <nav className="hidden md:flex items-center gap-8 font-body text-sm text-muted-foreground">
         <a href="#about" className="hover:text-foreground transition-colors">About</a>
@@ -51,7 +51,7 @@ const Header = () => (
 
 const Hero = () => (
   <section className="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
-    <img src={heroImage} alt="Hotel Ambience Gwalior exterior" className="absolute inset-0 w-full h-full object-cover" width={1920} height={1080} />
+    <img src={heroImage} alt="Hotel Ambience Gwalior exterior" className="absolute inset-0 w-full h-full object-cover object-center" width={1920} height={1080} />
     <div className="absolute inset-0 bg-gradient-to-b from-foreground/60 via-foreground/40 to-foreground/70" />
     <div className="relative z-10 text-center px-4 max-w-3xl">
       <p className="font-body text-sm tracking-[0.3em] uppercase text-gold-light animate-fade-in-up mb-4">Welcome to</p>
